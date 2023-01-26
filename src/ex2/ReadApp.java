@@ -11,7 +11,7 @@ public class ReadApp {
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String firstLine= null;
-            while((firstLine = br.readLine()) != null) {
+            while( (firstLine = br.readLine()) != null) {
                 System.out.println(firstLine);
             }
             br.close();
