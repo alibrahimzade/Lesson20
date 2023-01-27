@@ -12,16 +12,12 @@ public class FileWriterApp {
 
         try {
             FileOutputStream fos = new FileOutputStream("Test.txt");
-            byte[] bytes = "Hello World".getBytes(StandardCharsets.UTF_8);
+            byte[] bytes = "Hello World".getBytes();
             System.out.println(Arrays.toString(bytes));
             fos.write(bytes);
             fos.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("---------");
-
-
-
     }
 }
